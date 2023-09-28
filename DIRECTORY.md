@@ -567,7 +567,6 @@
   * [Dual Number Automatic Differentiation](maths/dual_number_automatic_differentiation.py)
   * [Entropy](maths/entropy.py)
   * [Euclidean Distance](maths/euclidean_distance.py)
-  * [Euclidean Gcd](maths/euclidean_gcd.py)
   * [Euler Method](maths/euler_method.py)
   * [Euler Modified](maths/euler_modified.py)
   * [Eulers Totient](maths/eulers_totient.py)
