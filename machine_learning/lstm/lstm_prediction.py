@@ -1,7 +1,7 @@
 """
     Create a Long Short Term Memory (LSTM) network model
     An LSTM is a type of Recurrent Neural Network (RNN) as discussed at:
-    * http://colah.github.io/posts/2015-08-Understanding-LSTMs
+    * https://colah.github.io/posts/2015-08-Understanding-LSTMs
     * https://en.wikipedia.org/wiki/Long_short-term_memory
 """
 import numpy as np
@@ -32,10 +32,10 @@ if __name__ == "__main__":
     train_x, train_y = [], []
     test_x, test_y = [], []
 
-    for i in range(0, len(train_data) - forward_days - look_back + 1):
+    for i in range(len(train_data) - forward_days - look_back + 1):
         train_x.append(train_data[i : i + look_back])
         train_y.append(train_data[i + look_back : i + look_back + forward_days])
-    for i in range(0, len(test_data) - forward_days - look_back + 1):
+    for i in range(len(test_data) - forward_days - look_back + 1):
         test_x.append(test_data[i : i + look_back])
         test_y.append(test_data[i + look_back : i + look_back + forward_days])
     x_train = np.array(train_x)
